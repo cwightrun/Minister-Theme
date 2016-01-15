@@ -1,0 +1,19 @@
+{
+  "name": "CH2M",
+  "version": "1.0.0",
+  "description": "Gulp package for Minister - a custom Drupal administration theme by Chapter Three",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.3.5",
+    "sassdoc": "~2.1.9"
+  }
+}

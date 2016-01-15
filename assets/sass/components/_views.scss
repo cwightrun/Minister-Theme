@@ -1,0 +1,44 @@
+/*
+
+  Views
+  ==========================================================================
+
+  Styles for the various administrative Views (content overview)
+
+*/
+
+.view-id-content {
+
+  td {
+    border: dotted 1px tomato;
+  }
+
+  .views-table {
+    width: 100%;
+
+    // table-level:
+    tr td:first-child,
+    tr th:first-child {
+      padding: 0 8px;
+    }
+
+    tbody tr:hover {
+      background: $glass;
+    }
+
+    td.is-active {
+      background: $glass;
+    }
+
+    td.views-field-node-bulk-form {
+      width: 14px;
+    }
+
+    // table-child-elements:
+    .form-type-checkbox {
+      margin: 1em;
+    }
+
+  }
+
+}

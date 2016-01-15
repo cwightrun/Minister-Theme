@@ -1,0 +1,19 @@
+/*
+
+  Main
+  ==========================================================================
+
+  Establishing overall layout styles. Mostly reserved for top-level wrappers.
+
+*/
+
+body {
+  background: $midnight;
+}
+
+.layout-container {
+  background: #FFF;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 3px;
+}

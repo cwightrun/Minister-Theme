@@ -1,0 +1,8 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      assets/css/styles.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

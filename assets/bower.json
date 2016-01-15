@@ -1,0 +1,30 @@
+{
+  "name": "CH2M Drupal Theme",
+  "version": "1.0.0",
+  "authors": [
+    "drewbolles <drewbolles@gmail.com>"
+  ],
+  "description": "CH2M custom Drupal theme",
+  "license": "MIT",
+  "homepage": "www.ch2m.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5",
+    "sass-mq": "~3.2.2",
+    "picturefill": "~2.3.1",
+    "snap.svg": "~0.4.1",
+    "jquery-touchswipe": "~1.6.9",
+    "matchHeight": "~0.6.0",
+    "chosen": "~1.4.2",
+    "colorbox": "~1.6.1"
+  },
+  "devDependencies": {
+    "susy": "~2.2.10"
+  }
+}
