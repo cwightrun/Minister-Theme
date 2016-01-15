@@ -8,17 +8,37 @@
 
 */
 
-//  Colors
+// Colors
+// ==========================================================================
+// Spoiler: White is used.
+
+$charcoal:      #21272b;    // Rarely used, mostly for accents to $midnight el's
+$midnight:      #333d44;    // Considered "darkest background"
+$fjord:         #475765;    // Accompanying shade to $midnight
+$crystal:       #c2d2dd;    // Pleasant light share, can be bg
+$glass:         #e1ebf2;    // Accompanying shade to $crystal, hilight
+$lava:          #ad4000;    // Slightly muted hilight
+$orange:        #e15300;    // Accompanying $lava
+$grass:         #4d882a;    // Slightly muted hilight
+$lime:          #76bc4c;    // Accompanying $grass
+$cobalt:        #247dcb;    // Slightly muted hilight
+$azure:         #3aa2fc;    // Accompanying $cobalt
+
+
+// Type
 // ==========================================================================
 
-$midnight:      #333d44;
-$fjord:         #475765;
-$crystal:       #c2d2dd;
-$glass:         #e1ebf2;
-// Spoiler: white is used.
-$lava:          #ad4000;
-$orange:        #e15300;
-$grass:         #4d882a;
-$lime:          #76bc4c;
-$cobalt:        #247dcb;
-$azure:         #3aa2fc;
+$serif: 'Merriweather', serif;
+
+
+// Susy
+// ==========================================================================
+// Running with the defaults for now.
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
