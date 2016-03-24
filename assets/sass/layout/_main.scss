@@ -13,12 +13,11 @@ body {
 }
 
 .layout-container {
-  @include container();
-  margin-left: gutter(2);
-  margin-right: gutter(2);
-  background: #FFF;
+  @include container($wide);
   margin-top: 12px;
   padding: 20px;
-  border-radius: 3px;
+  color: #333;
+  background: #F1F1F1;
   border: 1px solid $midnight;
+  border-radius: 3px;
 }
