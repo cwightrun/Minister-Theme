@@ -23,19 +23,21 @@
       background: transparent;
       border: none;
     }
+
   } // dropbutton-widget
   
   .dropbutton-action.last {
     border-radius: 0 0 0 1em; /* LTR */
   }
 
-  .dropbutton-multiple {
-    .dropbutton {
+  &.dropbutton-multiple {
+    ul.dropbutton {
       border: none;
     }
+
     .secondary-action {
       border: none;
     }
-  } // multiple
+  } // &.dropbutton-multiple
 
 } // .dropbutton-wrapper
