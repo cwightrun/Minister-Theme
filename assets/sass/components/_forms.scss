@@ -8,24 +8,33 @@
 */
 
 .form-item {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
   label {
+    padding-right: 12px;
+    font-family: $sans;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1px;
     color: $midnight;
   }
   
   input,
-  textarea,
-  select {
+  textarea {
     @include boxy();
     padding: 6px 12px 6px 8px;
     background: #FFF;
+    font-family: $serif;
   }
 
-  input {} // Input
+  select {
+    @include boxy();
+    box-shadow: none;
+  }
   
-  .form-textarea-wrapper {}
+  .form-textarea-wrapper {
+    padding-top: 12px;
+  }
   
   textarea {} // textarea
 
@@ -34,6 +43,18 @@
     height: 8px;
     background-size: 100%;
   }
+
+  .description {    // Help-text
+    font-size: 14px;
+    color: $fjord;
+    &:before {
+      content: 'Hint: ';
+      font-weight: bold;
+    }
+  }
+
+  // Submit-elements are handled in the _dropbutton.scss partial, for now.
+
 } // .form-item
 
 

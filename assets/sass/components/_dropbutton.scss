@@ -4,17 +4,38 @@
   ==========================================================================
   
   The drop-down element most commonly used to edit/devel/delete.
+  Note: This element relies on JavaScript being enabled.
 
 */
 
-.dropbutton-wrapper {}
+.js .dropbutton-wrapper {
 
-.dropbutton-widget {
-  border-radius: 3px;
-  border: 1px solid $fjord;
+  .dropbutton-widget {
+    @include button();
 
-  ul.dropbutton a,
-  button[type=button] {
-    padding: 4px;
+    ul.dropbutton a,
+    button[type=button] {
+      padding: 4px;
+    }
+
+    li input[type=submit] {
+      -webkit-appearance: none;
+      background: transparent;
+      border: none;
+    }
+  } // dropbutton-widget
+  
+  .dropbutton-action.last {
+    border-radius: 0 0 0 1em; /* LTR */
   }
-}
+
+  .dropbutton-multiple {
+    .dropbutton {
+      border: none;
+    }
+    .secondary-action {
+      border: none;
+    }
+  } // multiple
+
+} // .dropbutton-wrapper
