@@ -31,7 +31,7 @@
     background: rgba(0, 0, 0, 0.025);
     border: 1px solid #FFF;
     border-bottom: 2px solid $fjord;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
 
     &:hover {
       background: rgba(0, 0, 0, 0.05);
@@ -121,9 +121,9 @@
 
   // Errors
   input.error {
-    background: rgba(225, 83, 0, 0.05); // $lava
-    border: 1px solid $orange;
-    border-bottom: 2px solid $orange;
+    background: rgba(239, 67, 79, 0.05); // $berry
+    border: 1px solid $berry;
+    border-bottom: 2px solid $berry;
   }
 
 } // .form-item

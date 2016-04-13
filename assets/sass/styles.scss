@@ -16,6 +16,7 @@
 @import
   "base/vars",
   "base/base",
+  "base/example",
   "base/mixins";
 
 // @import "https://fonts.googleapis.com/css?family=Merriweather";
@@ -39,8 +40,8 @@
   "components/forms",
   "components/dropbutton",
   "components/views",
-  "components/tabs";
-//   "components/messages",
+  "components/tabs",
+  "components/messages";
 //   "components/search-form",
 //   "components/blocks",
 //   "components/article",

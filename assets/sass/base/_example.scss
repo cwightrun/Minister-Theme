@@ -1,0 +1,97 @@
+
+body {
+  background: tomato;
+}
+
+.example-grid {
+
+  &.two-up .square {
+    @include gallery(6);
+  }
+
+  &.three-up .square {
+    @include gallery(4);
+  }  
+
+}
+
+.square {
+  min-height: 150px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    color: #FFF;
+    text-shadow: 0 2px 2px black;
+    font-size: 24px;
+    font-weight: 100;
+  }
+
+  // Color Variables
+
+  &.charcoal {   // Color Variable: Rarely used, mostly for accents to $midnight el's
+    background: $charcoal;
+    &:after { content: '$charcoal'; }
+  }
+
+  &.midnight {   // Color Variable: Considered "darkest background"
+    background: $midnight;
+    &:after { content: '$midnight'; }
+  }
+
+  &.fjord {   // Color Variable: Accompanying shade to $midnight
+    background: $fjord;
+    &:after { content: '$fjord'; }
+  }
+
+  &.crystal {   // Color Variable: Pleasant light share, can be bg
+    background: $crystal;
+    &:after { content: '$crystal'; }
+  }
+
+  &.glass {   // Color Variable: Accompanying shade to $crystal, hilight
+    background: $glass;
+    &:after { content: '$glass'; }
+  }
+
+  &.lava {   // Color Variable: Slightly muted hilight
+    background: $lava;
+    &:after { content: '$lava'; }
+  }
+
+  &.orange {   // Color Variable: Accompanying $lava
+    background: $orange;
+    &:after { content: '$orange'; }
+  }
+
+  &.grass {   // Color Variable: Slightly muted hilight
+    background: $grass;
+    &:after { content: '$grass'; }
+  }
+
+  &.lime {   // Color Variable: Accompanying $grass
+    background: $lime;
+    &:after { content: '$lime'; }
+  }
+
+  &.cobalt {   // Color Variable: Slightly muted hilight
+    background: $cobalt;
+    &:after { content: '$cobalt'; }
+  }
+
+  &.azure {   // Color Variable: Accompanying $cobalt
+    background: $azure;
+    &:after { content: '$azure'; }
+  }
+
+  &.berry {   // Color Variable:
+    background: $berry;
+    &:after { content: '$berry'; }
+  }
+
+  &.heart {   // Color Variable:
+    background: $heart;
+    &:after { content: '$heart'; }
+  }
+}

@@ -1,0 +1,22 @@
+/*
+
+  Messages
+  ==========================================================================
+
+  Drupal-inherent system message styles.
+
+*/
+
+div[role=contentinfo].messages {
+
+  &.messages--error {
+    background-color: rgba(239, 67, 79, 0.075); // $berry
+    border-color: $berry;
+  }
+
+  &.messages--status {
+    background-color: rgba(117, 192, 61, 0.075); // $lime
+    border-color: $grass;
+  }
+}
+
