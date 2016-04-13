@@ -13,24 +13,51 @@
 
   label {
     padding-right: 12px;
-    font-family: $sans;
-    font-size: 16px;
-    font-weight: bold;
+    font-family: $serif;
+    font-size: 24px;
+    font-weight: 400;
     color: $midnight;
+    vertical-align: bottom;
   }
   
   input,
   textarea {
-    @include boxy();
-    padding: 6px 12px 6px 8px;
-    background: #FFF;
-    font-family: $serif;
-  }
+    // @include boxy();
+    padding: 4px 16px 0px 8px;
+    // background: #FFF;
+    font-family: $sans;
+    font-size: 18px;
+    line-height: 36px;
+    background: rgba(0, 0, 0, 0.025);
+    border: 1px solid #FFF;
+    border-bottom: 2px solid $fjord;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    
+    &:focus,
+    &:active {
+      outline: 0;
+      box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+      border: 1px solid $azure;
+      border-bottom: 2px solid $azure;
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    &.form-file {
+      background: transparent;
+      border: none;
+      line-height: 0;
+      font-size: 16px;
+    }
+  } // input, textarea
 
   select {
     @include boxy();
     box-shadow: none;
-  }
+  } // select
   
   .form-textarea-wrapper {
     padding-top: 12px;
@@ -45,7 +72,9 @@
   }
 
   .description {    // Help-text
+    padding: 12px 0 24px 0;
     font-size: 14px;
+    line-height: 24px;
     color: $fjord;
     &:before {
       content: 'Hint: ';
@@ -55,8 +84,74 @@
 
   // Submit-elements are handled in the _dropbutton.scss partial, for now.
 
+  .form-type-managed-file {
+    .image-preview {
+      padding: 12px;
+    }
+  }
+
+  // User-forms
+  .form-type-password {
+    margin: 0;
+  }
+
+  .password-strength {
+    padding-top: 12px;
+    line-height: 48px;
+  }
+
+  .password-confirm,
+  input[type=password] {
+    line-height: 36px;
+  }
+
+  .password-suggestions {
+    padding-left: 12px;
+  }
+
+  .confirm-parent,
+  .password-parent {
+    max-width: none;
+    width: auto;
+  }
+
+  .password-strength__meter {
+    max-width: 280px;
+  }
+
+  // Errors
+  input.error {
+    background: rgba(225, 83, 0, 0.05); // $lava
+    border: 1px solid $orange;
+    border-bottom: 2px solid $orange;
+  }
+
 } // .form-item
 
+.form-wrapper {
+  summary {
+    font-weight: bold;
+  }
+}
 
+// Fieldsets & Fieldgroups
+.fieldgroup.form-composite {
+  legend {
+    padding-right: 12px;
+    font-family: $serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: $midnight;
+    vertical-align: bottom;
+  } // legend
 
+  label {
+    padding: 4px 16px 0px 8px;
+    font-family: $sans;
+    font-size: 16px;
+  }
 
+  .fieldset-wrapper {
+    padding-left: 12px;
+  }
+} // fieldgroup.form-composite

@@ -9,6 +9,7 @@
 
 a {
   color: $cobalt;
+  transition: 150ms all ease-in-out;
   &:hover {
     color: $orange;
   }

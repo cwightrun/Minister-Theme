@@ -8,7 +8,8 @@
 */
 
 body {
-  background: $midnight;
+  // background: $midnight;
+  background: #F1F1F1;
   font-family: $sans;
 }
 
@@ -17,7 +18,8 @@ body {
   margin-top: 12px;
   padding: 20px;
   color: #333;
-  background: #F1F1F1;
-  border: 1px solid $midnight;
+  background: #FEFEFE;
+  border: 1px solid #F5F5F5;
+  // border: 1px solid $midnight;
   border-radius: 3px;
 }
