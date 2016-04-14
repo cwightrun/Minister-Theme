@@ -7,45 +7,48 @@
 
 */
 
-.form-item {
-  margin-top: 24px;
-  margin-bottom: 24px;
+.form-item { // Most common form element wrapper
+  margin-top: 12px;
+  margin-bottom: 36px;
 
-  label {
+  >label {
     padding-right: 12px;
     font-family: $serif;
     font-size: 24px;
     font-weight: 400;
     color: $midnight;
     vertical-align: bottom;
+    text-transform: capitalize;
   }
-  
+
   input,
   textarea {
-    // @include boxy();
     padding: 4px 16px 0px 8px;
-    // background: #FFF;
     font-family: $sans;
-    font-size: 18px;
-    line-height: 36px;
-    background: rgba(0, 0, 0, 0.025);
+    background-color: rgba(0, 0, 0, 0.033);
     border: 1px solid #FFF;
-    border-bottom: 2px solid $fjord;
-    transition: all 100ms ease-in-out;
+    border-bottom: 2px solid $cobalt;
+    box-shadow: inset 0 40px 30px -20px rgba(0,0,0,0.05);
+    transition: $trans-med;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.02);
     }
     
     &:focus,
     &:active {
       outline: 0;
-      box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.05);
       border: 1px solid $azure;
       border-bottom: 2px solid $azure;
-      background: rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
     }
-
+  }
+  
+  input {
+    font-size: 18px;
+    line-height: 36px;
+    
     &.form-file {
       background: transparent;
       border: none;
@@ -53,6 +56,18 @@
       font-size: 16px;
     }
   } // input, textarea
+
+  textarea {
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 80px;
+  }
+
+  // Summary Link
+  .form-type-textarea .field-edit-link {
+    font-size: 14px;
+    color: $cobalt;
+  }
 
   select {
     @include boxy();
@@ -79,6 +94,12 @@
     &:before {
       content: 'Hint: ';
       font-weight: bold;
+    }
+  }
+
+  &.form-type-checkbox {
+    label {
+      font-size: 18px;
     }
   }
 
@@ -126,7 +147,14 @@
     border-bottom: 2px solid $berry;
   }
 
-} // .form-item
+  input.form-autocomplete {
+    background-repeat: no-repeat;
+    transition: box-shadow 100ms ease-in-out,
+                margin 100ms ease-in-out,
+                border 100ms ease-in-out; 
+  }
+
+} // // // // // // // // // // // // // Form Item: .form-item
 
 .form-wrapper {
   summary {
@@ -155,3 +183,12 @@
     padding-left: 12px;
   }
 } // fieldgroup.form-composite
+
+// Specifics
+.filter-wrapper {
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+

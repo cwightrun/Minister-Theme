@@ -1,0 +1,32 @@
+/*
+
+  Veritcal Tabs
+  ==========================================================================
+
+  Styles primarily targeting the core Vertical Tabs
+
+*/
+
+.vertical-tabs__menu-item {
+
+  a {}
+
+  a:hover {
+    outline: none;
+
+    .vertical-tabs__menu-item-title {
+      text-decoration: none;
+    }
+    
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  } // a:hover
+
+  &.is-selected a {
+    box-shadow: inset 0 -2px $azure;
+  }
+}
+
+
