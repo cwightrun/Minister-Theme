@@ -19,21 +19,28 @@ $fjord:         #475765;    // Accompanying shade to $midnight
 $crystal:       #c2d2dd;    // Pleasant light share, can be bg
 $glass:         #e1ebf2;    // Accompanying shade to $crystal, hilight
 
+  $light: $crystal;
+
 $lava:          #ad4000;    // Slightly muted hilight
 $orange:        #e15300;    // Accompanying $lava
 
 $grass:         #4d882a;    // Slightly muted hilight
 $lime:          #76bc4c;    // Accompanying $grass
 
+  $green: $grass;
+  $lime-light:      lighten($lime, 40%);
+  $grass-light:     lighten($grass, 55%);
+
 $cobalt:        #247dcb;    // Slightly muted hilight
 $azure:         #3aa2fc;    // Accompanying $cobalt
+
+  $blue: $cobalt;
 
 $heart:         #bf363f;    // Darker Red to accommodate $berry
 $berry:         #ef434f;    // Lighter Red to accommodate $heart
 
+  $red: $heart;
 
-$lime-light:      lighten($lime, 40%);
-$grass-light:     lighten($grass, 55%);
 
 
 
@@ -66,8 +73,8 @@ $wide:      1280px;
 // Transitions
 // ==========================================================================
 
-$trans-fast:      all 75ms ease-in-out;
-$trans-med:       all 100ms ease-in-out;
-$trans-slow:      all 150ms ease-in-out;
+$trans-fast:      all 60ms ease-in-out;
+$trans-med:       all 80ms ease-in-out;
+$trans-slow:      all 120ms ease-in-out;
 
 

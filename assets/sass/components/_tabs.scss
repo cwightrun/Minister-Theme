@@ -10,6 +10,7 @@
 nav.tabs {
   margin-bottom: 24px;
   border-bottom: 1px solid $cobalt;
+  transition: $trans-fast;
 
   ul.primary {
     margin: 0;
@@ -24,12 +25,28 @@ nav.tabs {
         color: $cobalt;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+        &:hover {
+          background: $cobalt;
+          color: #FFF;
+        }
       }
 
       &.is-active a {
-        background: $cobalt;
+        margin-bottom: -1px;
+        background: lighten($cobalt, 20%);
         color: #FFF;
+        border: 1px solid $cobalt;
+        border-bottom: 1px solid lighten($cobalt, 20%);
+        
+        &:hover {
+          background: $cobalt;
+          border-bottom: 1px solid $cobalt;
+        }
       }
     } // li
   } // primary
 } // tabs
+
+.reset-appearance {
+  display: none;
+}

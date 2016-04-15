@@ -8,10 +8,49 @@
 */
 
 .view-id-content {
+  transition: $trans-med;
 
   // Header Components
   .view-filters {
 
+    .form--inline {
+      
+      .form-item {
+        margin-top: 12px;
+        margin-bottom: 0;
+        padding-bottom: 12px;
+        padding-right: 36px;
+        line-height: 24px;
+
+        >label {
+          font-size: 18px;
+          vertical-align: middle;
+        }
+
+        input[type=text],
+        textarea {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      } // Form Item
+
+      .form-actions {
+        padding: 24px 0 48px 0;
+        display: flex;
+        align-items: flex-start;
+
+        #edit-submit-content {
+          @include button($blue, light);
+        }
+
+        #edit-reset {
+          @include button($berry, light);
+        }
+
+
+      }
+
+    } // Form--Inline 
   }  // View-Filters
 
   // Meat & Potatoes
@@ -45,7 +84,8 @@
     }
 
     tbody tr:hover {
-      background: $glass;
+      transition: $trans-fast;
+      background: lighten($glass, 10%);
     }
 
     // table-child-elements:
